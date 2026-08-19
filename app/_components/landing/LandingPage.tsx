@@ -24,7 +24,7 @@ export default function LandingPage() {
                 </span>
               </div>
             </div>
-            <nav style={{ 'display': 'flex', 'alignItems': 'center', 'justifyContent': 'center', 'gap': '22px', 'fontSize': '14px', 'fontWeight': '500', 'color': '#4B5580', 'marginLeft': 'auto', 'flex': '1 1 380px', 'flexWrap': 'nowrap', 'whiteSpace': 'nowrap' }}>
+            <nav className='lp-nav' style={{ 'display': 'flex', 'alignItems': 'center', 'justifyContent': 'center', 'gap': '22px', 'fontSize': '14px', 'fontWeight': '500', 'color': '#4B5580', 'marginLeft': 'auto', 'flex': '1 1 380px', 'flexWrap': 'nowrap', 'whiteSpace': 'nowrap' }}>
               <a href='#modulos' style={{ 'color': '#4B5580' }}>
                 Módulos
               </a>
@@ -175,7 +175,7 @@ export default function LandingPage() {
                 Do dado bruto do sistema tributário ao relatório que vai para a mesa do prefeito.
               </p>
             </div>
-            <div style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(3,1fr)', 'gap': '22px' }}>
+            <div className='lp-grid-recursos' style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(3,1fr)', 'gap': '22px' }}>
               <div className='lp-hover-6' style={{ 'border': '1px solid #E9EDF8', 'borderRadius': '16px', 'padding': '28px', 'background': '#fff' }}>
                 <div style={{ 'width': '46px', 'height': '46px', 'borderRadius': '12px', 'background': '#EDF1FD', 'display': 'flex', 'alignItems': 'center', 'justifyContent': 'center', 'color': '#2E3E9E', 'fontSize': '19px' }}>
                   ▤
@@ -262,7 +262,7 @@ export default function LandingPage() {
               </p>
             </div>
             <div style={{ 'display': 'flex', 'flexDirection': 'column', 'gap': '88px' }}>
-              <div style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(auto-fit,minmax(420px,1fr))', 'gap': '56px', 'alignItems': 'center' }}>
+              <div className='lp-grid-tela' style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(auto-fit,minmax(420px,1fr))', 'gap': '56px', 'alignItems': 'center' }}>
                 <ScaledFrame contentHeight={1500} height='440px' style={{ 'borderRadius': '16px', 'border': '1px solid #E2E8F7', 'background': '#F1F5FC', 'boxShadow': '0 40px 70px -46px rgba(19,29,80,0.6)' }}>
                   <AppMockup tab='orcamento' />
                 </ScaledFrame>
@@ -308,7 +308,7 @@ export default function LandingPage() {
                   </div>
                 </div>
               </div>
-              <div style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(auto-fit,minmax(420px,1fr))', 'gap': '56px', 'alignItems': 'center' }}>
+              <div className='lp-grid-tela' style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(auto-fit,minmax(420px,1fr))', 'gap': '56px', 'alignItems': 'center' }}>
                 <div>
                   <span style={{ 'display': 'inline-block', 'background': '#EDF1FD', 'color': '#2E3E9E', 'fontFamily': 'var(--font-ibm-plex-mono),monospace', 'fontSize': '10px', 'letterSpacing': '0.18em', 'padding': '6px 12px', 'borderRadius': '6px', 'textTransform': 'uppercase' }}>
                     Contribuintes
@@ -354,7 +354,7 @@ export default function LandingPage() {
                   <AppMockup tab='contribuintes' />
                 </ScaledFrame>
               </div>
-              <div style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(auto-fit,minmax(420px,1fr))', 'gap': '56px', 'alignItems': 'center' }}>
+              <div className='lp-grid-tela' style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(auto-fit,minmax(420px,1fr))', 'gap': '56px', 'alignItems': 'center' }}>
                 <ScaledFrame contentHeight={1500} height='440px' style={{ 'borderRadius': '16px', 'border': '1px solid #E2E8F7', 'background': '#F1F5FC', 'boxShadow': '0 40px 70px -46px rgba(19,29,80,0.6)' }}>
                   <AppMockup tab='imobiliario' />
                 </ScaledFrame>
@@ -400,7 +400,7 @@ export default function LandingPage() {
                   </div>
                 </div>
               </div>
-              <div style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(auto-fit,minmax(420px,1fr))', 'gap': '56px', 'alignItems': 'center' }}>
+              <div className='lp-grid-tela' style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(auto-fit,minmax(420px,1fr))', 'gap': '56px', 'alignItems': 'center' }}>
                 <div>
                   <span style={{ 'display': 'inline-block', 'background': '#EDF1FD', 'color': '#2E3E9E', 'fontFamily': 'var(--font-ibm-plex-mono),monospace', 'fontSize': '10px', 'letterSpacing': '0.18em', 'padding': '6px 12px', 'borderRadius': '6px', 'textTransform': 'uppercase' }}>
                     Mobiliário e outros tributos
@@ -446,7 +446,7 @@ export default function LandingPage() {
                   <AppMockup tab='mobiliario' />
                 </ScaledFrame>
               </div>
-              <div style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(auto-fit,minmax(420px,1fr))', 'gap': '56px', 'alignItems': 'center' }}>
+              <div className='lp-grid-tela' style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(auto-fit,minmax(420px,1fr))', 'gap': '56px', 'alignItems': 'center' }}>
                 <ScaledFrame contentHeight={1500} height='440px' style={{ 'borderRadius': '16px', 'border': '1px solid #E2E8F7', 'background': '#F1F5FC', 'boxShadow': '0 40px 70px -46px rgba(19,29,80,0.6)' }}>
                   <AppMockup tab='divida' />
                 </ScaledFrame>
@@ -492,7 +492,7 @@ export default function LandingPage() {
                   </div>
                 </div>
               </div>
-              <div style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(auto-fit,minmax(420px,1fr))', 'gap': '56px', 'alignItems': 'center' }}>
+              <div className='lp-grid-tela' style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(auto-fit,minmax(420px,1fr))', 'gap': '56px', 'alignItems': 'center' }}>
                 <div>
                   <span style={{ 'display': 'inline-block', 'background': '#FDF2DF', 'color': '#8A5B08', 'fontFamily': 'var(--font-ibm-plex-mono),monospace', 'fontSize': '10px', 'letterSpacing': '0.18em', 'padding': '6px 12px', 'borderRadius': '6px', 'textTransform': 'uppercase' }}>
                     Reforma tributária · novo
@@ -538,7 +538,7 @@ export default function LandingPage() {
                   <AppMockup tab='reforma' />
                 </ScaledFrame>
               </div>
-              <div style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(auto-fit,minmax(420px,1fr))', 'gap': '56px', 'alignItems': 'center' }}>
+              <div className='lp-grid-tela' style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(auto-fit,minmax(420px,1fr))', 'gap': '56px', 'alignItems': 'center' }}>
                 <ScaledFrame contentHeight={1500} height='440px' style={{ 'borderRadius': '16px', 'border': '1px solid #E2E8F7', 'background': '#F1F5FC', 'boxShadow': '0 40px 70px -46px rgba(19,29,80,0.6)' }}>
                   <AppMockup tab='chat' />
                 </ScaledFrame>
@@ -588,7 +588,7 @@ export default function LandingPage() {
           </div>
         </section>
         <section id='inteligencia' style={{ 'padding': '24px 32px 96px', 'background': '#fff' }}>
-          <div style={{ 'maxWidth': '1220px', 'margin': '0 auto', 'display': 'grid', 'gridTemplateColumns': '1.05fr 0.95fr', 'gap': '64px', 'alignItems': 'center' }}>
+          <div className='lp-grid-inteligencia' style={{ 'maxWidth': '1220px', 'margin': '0 auto', 'display': 'grid', 'gridTemplateColumns': '1.05fr 0.95fr', 'gap': '64px', 'alignItems': 'center' }}>
             <div style={{ 'background': 'linear-gradient(150deg,#2E3E9E,#1B2668)', 'borderRadius': '20px', 'padding': '34px', 'color': '#fff', 'boxShadow': '0 40px 70px -40px rgba(19,29,80,0.7)' }}>
               <div style={{ 'display': 'flex', 'alignItems': 'center', 'justifyContent': 'space-between' }}>
                 <div style={{ 'width': '38px', 'height': '38px', 'borderRadius': '999px', 'border': '2px solid rgba(255,255,255,0.35)', 'display': 'flex', 'alignItems': 'center', 'justifyContent': 'center' }}>
@@ -672,7 +672,7 @@ export default function LandingPage() {
           </div>
         </section>
         <section id='resultados' style={{ 'padding': '76px 32px', 'background': '#F6F8FE', 'borderTop': '1px solid #E9EDF8', 'borderBottom': '1px solid #E9EDF8' }}>
-          <div style={{ 'maxWidth': '1120px', 'margin': '0 auto', 'display': 'grid', 'gridTemplateColumns': 'repeat(4,1fr)', 'gap': '32px' }}>
+          <div className='lp-grid-resultados' style={{ 'maxWidth': '1120px', 'margin': '0 auto', 'display': 'grid', 'gridTemplateColumns': 'repeat(4,1fr)', 'gap': '32px' }}>
             <div>
               <div style={{ 'fontSize': '38px', 'fontWeight': '800', 'letterSpacing': '-0.03em', 'color': '#1F2B6C' }}>
                 +11,1%
@@ -739,7 +739,7 @@ export default function LandingPage() {
                 Prefeitura Analytics
               </span>
             </div>
-            <nav style={{ 'display': 'flex', 'gap': '26px', 'fontSize': '14px', 'color': '#5A6488' }}>
+            <nav className='lp-nav' style={{ 'display': 'flex', 'gap': '26px', 'fontSize': '14px', 'color': '#5A6488' }}>
               <a href='#modulos' style={{ 'color': '#5A6488' }}>
                 Módulos
               </a>

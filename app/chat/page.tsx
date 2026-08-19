@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { abaVisivel, lerPerfilCookie, type Perfil } from '@/lib/perfil'
+import MarcaPrefeitura from '@/app/_components/MarcaPrefeitura'
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ReferenceLine,
   AreaChart, Area, ResponsiveContainer,
@@ -83,7 +84,6 @@ const CSS = `
   background: #fff; border-radius: 20px; padding: 12px 18px;
   box-shadow: 0 6px 22px rgba(40,80,180,0.05);
 }
-.kc-nav-logo { height: 46px; width: auto; display: block; }
 .kc-tabs {
   display: flex; align-items: center; gap: 3px; flex-wrap: wrap; justify-content: center;
   background: #f4f7fc; border-radius: 30px; padding: 5px;
@@ -1209,7 +1209,7 @@ export default function ChatPage() {
 
         {/* ── TOP NAV ── */}
         <div className="kc-nav">
-          <img src="/logo-aruja.png" alt="Prefeitura Municipal de Arujá" className="kc-nav-logo" />
+          <MarcaPrefeitura tamanho={42} direcao="horizontal" />
 
           <div className="kc-tabs">
             {[

@@ -83,6 +83,93 @@
   }
 }
 
+/* ---------------------------------------------------------------------------
+   Celular. O export foi desenhado só para desktop: vários grids usam trilhos
+   com mínimo fixo (minmax(540px,1fr), minmax(420px,1fr)), que nunca encolhem
+   abaixo desse mínimo — em telas estreitas o conteúdo passava da viewport e era
+   cortado pelo overflow:hidden da raiz. As regras abaixo valem só até 767px, e
+   miram classes específicas da landing para não alcançar o markup do painel,
+   que é renderizado num canvas fixo de 1440px e depois escalado.
+   --------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  .lp-hero-grid,
+  .lp-grid-recursos,
+  .lp-grid-tela,
+  .lp-grid-inteligencia {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* minmax(0,1fr) em vez de 1fr: o mínimo automático deixa o conteúdo esticar
+     a coluna e as duas saem com larguras diferentes. */
+  .lp-grid-resultados {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .lp-grid-tela,
+  .lp-grid-inteligencia {
+    gap: 32px !important;
+  }
+
+  .lp-grid-recursos,
+  .lp-grid-resultados {
+    gap: 16px !important;
+  }
+
+  /* Os menus vinham com nowrap e ficavam cortados. Viram uma faixa rolável
+     horizontalmente, o que preserva todos os links sem esticar o cabeçalho. */
+  .lp-nav {
+    flex: 1 1 100% !important;
+    margin-left: 0 !important;
+    justify-content: flex-start !important;
+    overflow-x: auto !important;
+    column-gap: 18px !important;
+    scrollbar-width: none;
+  }
+
+  .lp-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Mais área útil para o texto nas laterais. */
+  .lp-root section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .lp-root > div > header > div,
+  .lp-root footer > div {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  /* O cabeçalho é sticky: em três linhas ele comia ~19% da tela. */
+  .lp-root > div > header > div {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    row-gap: 8px !important;
+    column-gap: 14px !important;
+  }
+
+  .lp-root > div > header .lp-hover-5 {
+    padding: 9px 15px !important;
+    font-size: 13px !important;
+  }
+
+  /* "Acessar painel" + "Agendar demonstração": com gap de 20px a linha passava
+     da tela em aparelhos de 320px. */
+  .lp-root > div > header > div > div:last-of-type {
+    gap: 12px !important;
+    flex-wrap: wrap !important;
+  }
+}
+
+/* Tablet: três cards de recursos lado a lado ficam com ~217px cada. */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .lp-grid-recursos {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
 @keyframes floaty {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
