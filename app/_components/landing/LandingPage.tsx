@@ -632,16 +632,28 @@ export default function LandingPage() {
                 Inteligência
               </span>
               <h2 style={{ 'margin': '18px 0 14px', 'fontSize': '38px', 'lineHeight': '1.1', 'letterSpacing': '-0.03em', 'fontWeight': '800' }}>
-                A IA lê o número
+                Pergunte aos seus dados
                 <br />
                 <span style={{ 'color': '#2E3E9E' }}>
-                  e escreve a conclusão
+                  e receba a análise pronta
                 </span>
               </h2>
               <p style={{ 'margin': '0 0 26px', 'fontSize': '16px', 'lineHeight': '1.65', 'color': '#4B5580', 'maxWidth': '440px', 'textWrap': 'pretty' }}>
-                Todo mês a IA analisa os dados do município e escreve o que mudou, contra qual período e onde há risco de frustrar a receita. No chat, a mesma IA responde pergunta livre em português e cita o painel de origem de cada valor.
+                Você pergunta em português e a resposta vem com o valor, a comparação e a origem do dado. E a IA não espera a pergunta: a cada fechamento ela lê os números sozinha e aponta o que mudou e onde a receita corre risco.
               </p>
               <div style={{ 'display': 'flex', 'flexDirection': 'column', 'gap': '14px', 'fontSize': '15px', 'fontWeight': '600', 'color': '#3B4573' }}>
+                <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
+                  <span style={{ 'color': '#2E3E9E' }}>
+                    ✓
+                  </span>
+                  {' '}Pergunta livre, sem filtro nem menu
+                </span>
+                <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
+                  <span style={{ 'color': '#2E3E9E' }}>
+                    ✓
+                  </span>
+                  {' '}Resposta com valor, comparação e fonte
+                </span>
                 <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
                   <span style={{ 'color': '#2E3E9E' }}>
                     ✓
@@ -652,19 +664,7 @@ export default function LandingPage() {
                   <span style={{ 'color': '#2E3E9E' }}>
                     ✓
                   </span>
-                  {' '}Queda e sazonalidade detectadas sozinhas
-                </span>
-                <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
-                  <span style={{ 'color': '#2E3E9E' }}>
-                    ✓
-                  </span>
-                  {' '}Resumo pronto para a reunião de gabinete
-                </span>
-                <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
-                  <span style={{ 'color': '#2E3E9E' }}>
-                    ✓
-                  </span>
-                  {' '}Toda resposta cita a fonte e o período
+                  {' '}Alerta de queda antes de o exercício fechar
                 </span>
               </div>
             </div>
