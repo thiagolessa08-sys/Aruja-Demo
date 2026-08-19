@@ -24,6 +24,13 @@ export function middleware(req: NextRequest) {
     return NextResponse.next()
   }
 
+  // A raiz é pública: serve a landing page para visitantes. Quem já tem sessão
+  // é redirecionado ao painel pela própria página (que verifica a assinatura do
+  // cookie) — por isso não entra em PUBLIC_PATHS, que usa startsWith.
+  if (pathname === '/') {
+    return NextResponse.next()
+  }
+
   const token = req.cookies.get('auth_token')?.value
   if (!token) {
     if (pathname.startsWith('/api/')) {
@@ -33,11 +40,6 @@ export function middleware(req: NextRequest) {
   }
 
   const perfil = lerPerfil(token)
-
-  // Raiz → home do perfil
-  if (pathname === '/') {
-    return NextResponse.redirect(new URL(homeDoPerfil(perfil), req.url))
-  }
 
   if (!acessoPermitido(perfil, pathname)) {
     if (pathname.startsWith('/api/')) {

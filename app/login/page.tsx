@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import MarcaPrefeitura from '@/app/_components/MarcaPrefeitura'
 
 export default function LoginPage() {
   const router = useRouter()
@@ -36,9 +37,8 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 to-blue-700">
       <div className="bg-white rounded-2xl shadow-2xl p-10 w-full max-w-md">
-        <div className="text-center mb-8">
-          <img src="/logo-aruja.png" alt="Prefeitura de Arujá" className="mx-auto mb-4 h-auto w-full max-w-[260px]" />
-          <h1 className="text-lg font-semibold text-gray-600">Analytics Municipal</h1>
+        <div className="mb-8 flex justify-center">
+          <MarcaPrefeitura tamanho={64} />
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-5">

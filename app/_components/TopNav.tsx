@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { abaVisivel, lerPerfilCookie, type Perfil } from '@/lib/perfil'
+import MarcaPrefeitura from './MarcaPrefeitura'
 
 export type AbaTopo = 'orcamento' | 'contribuinte' | 'imobiliario' | 'mobiliario' | 'outros' | 'divida' | 'cobranca' | 'reforma' | 'chat'
 
@@ -35,7 +36,7 @@ export default function TopNav({ ativo }: { ativo: AbaTopo }) {
   return (
     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: '#ffffff', borderRadius: 20, padding: '12px 18px', boxShadow: '0 6px 22px rgba(40,80,180,0.05)', gap: 12 }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 10, flex: 'none' }}>
-        <img src="/logo-aruja.png" alt="Prefeitura Municipal de Arujá" style={{ height: 46, width: 'auto', display: 'block' }} />
+        <MarcaPrefeitura tamanho={42} direcao="horizontal" />
       </div>
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 3, background: '#f4f7fc', borderRadius: 30, padding: 5, flexWrap: 'wrap', justifyContent: 'center' }}>

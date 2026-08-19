@@ -1,0 +1,98 @@
+/* Estilos da landing page — escopados em .lp-root para não afetar o painel. */
+
+.lp-root,
+.lp-root *,
+.lp-root *::before,
+.lp-root *::after {
+  box-sizing: border-box;
+  /* Preflight troca o default `currentColor` das bordas por cinza; devolve o
+     comportamento padrão do CSS, que é o que o export assume. */
+  border-color: currentColor;
+}
+
+.lp-root {
+  background: #ffffff;
+  /* O export declara #101636 para a landing, mas a folha de estilo do painel
+     embutido é injetada depois e sobrescreve a cor do documento para #16204A.
+     Reproduzimos o resultado renderizado, não a declaração. */
+  color: #16204a;
+  font-family: var(--font-plus-jakarta), Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  /* O preflight do Tailwind impõe line-height 1.5 no html; o layout original foi
+     desenhado com o `normal` do navegador. Sem isto, todo texto sem line-height
+     explícito cresce e desalinha os blocos. */
+  line-height: normal;
+}
+
+/* `table` e `tr` mantêm o `gray` do user-agent; `th`/`td` seguem currentColor.
+   Todas com largura 0 hoje — a regra evita divergência se alguma borda passar a
+   ser desenhada. */
+.lp-root table,
+.lp-root tr {
+  border-color: gray;
+}
+
+/* Scrollbar fina do export. Escopado por :has para não alterar o painel. */
+:root:has(.lp-root) ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+:root:has(.lp-root) ::-webkit-scrollbar-thumb {
+  background: #cdd6ee;
+  border-radius: 8px;
+}
+
+.lp-root a {
+  color: #2e3e9e;
+  text-decoration: none;
+}
+
+.lp-root a:hover {
+  color: #1f2b6c;
+}
+
+/* O export original rodava sem reset de framework. Estas regras devolvem os
+   defaults do navegador que o preflight do Tailwind zera — sem elas as listas
+   perdem os marcadores. */
+.lp-root ul {
+  list-style: disc;
+}
+
+.lp-root li {
+  display: list-item;
+}
+
+.lp-root strong {
+  font-weight: bold;
+}
+
+/* Hero: em telas largas o preview do painel recebe mais espaço que o texto,
+   ficando maior sem precisar cortar a imagem. Abaixo de 1128px o grid volta a
+   empilhar em uma coluna, como no export original. */
+.lp-hero-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
+  gap: 48px;
+  align-items: center;
+}
+
+@media (min-width: 1128px) {
+  .lp-hero-grid {
+    grid-template-columns: 1fr 1.3fr;
+  }
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Estados de hover/foco — no export original vinham no atributo style-hover. */
+.mk-hover-1:hover { background:#F1F5FC !important; color:#1F2B6C !important; }
+.mk-hover-2:hover { border-color:#8B97D6 !important; color:#1F2B6C !important; }
+.mk-focus-3:focus { border-color:#8B97D6 !important; }
+.mk-hover-4:hover { background:#1F2B6C !important; }
+.lp-hover-5:hover { background:#1F2B6C !important; }
+.lp-hover-6:hover { border-color:#C6D0EC !important; box-shadow:0 24px 40px -32px rgba(19,29,80,0.5) !important; }
+.lp-hover-7:hover { background:#EDF1FD !important; }
