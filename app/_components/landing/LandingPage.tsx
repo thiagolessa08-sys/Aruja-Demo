@@ -62,23 +62,23 @@ export default function LandingPage() {
                   NOVO
                 </span>
                 <span style={{ 'fontSize': '13px', 'fontWeight': '600', 'color': '#3B4573' }}>
-                  Insights com IA na arrecadação
+                  IA que encontra receita parada
                 </span>
                 <span style={{ 'color': '#8791B4', 'display': 'flex' }}>
                   <SetaDireita tamanho={14} espessura={2.4} />
                 </span>
               </div>
               <h1 style={{ 'margin': '24px 0 0', 'fontSize': 'clamp(38px, 4.4vw, 56px)', 'lineHeight': '1.04', 'letterSpacing': '-0.035em', 'fontWeight': '800' }}>
-                Toda a receita
+                Mais receita
                 <br />
-                do município
+                para o município
                 <br />
                 <span style={{ 'color': '#2E3E9E' }}>
-                  em um só painel
+                  sem criar imposto
                 </span>
               </h1>
               <p style={{ 'margin': '22px 0 0', 'fontSize': '17px', 'lineHeight': '1.6', 'color': '#4B5580', 'maxWidth': '420px', 'textWrap': 'pretty' }}>
-                Orçamento, contribuintes, IPTU, ISS, dívida ativa e cobrança — consolidados, atualizados diariamente e prontos para decisão do gabinete.
+                A IA lê o dado tributário todo dia e mostra onde o dinheiro já lançado não entrou: inadimplência vencida, base fora do cadastro e dívida ativa perto de prescrever.
               </p>
               <div style={{ 'display': 'flex', 'alignItems': 'center', 'flexWrap': 'wrap', 'gap': '24px', 'marginTop': '34px' }}>
                 <a className='lp-hover-5' href='#demo' style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '12px', 'whiteSpace': 'nowrap', 'flex': 'none', 'background': '#2E3E9E', 'color': '#fff', 'padding': '17px 28px', 'borderRadius': '999px', 'fontSize': '15px', 'fontWeight': '700', 'boxShadow': '0 18px 34px -16px rgba(46,62,158,0.8)' }}>
@@ -99,7 +99,7 @@ export default function LandingPage() {
                   <span style={{ 'color': '#2E3E9E' }}>
                     ✓
                   </span>
-                  {' '}Integra com o sistema tributário
+                  {' '}Lê direto do seu sistema tributário
                 </span>
                 <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '8px' }}>
                   <span style={{ 'color': '#2E3E9E' }}>
@@ -128,7 +128,7 @@ export default function LandingPage() {
         <section id='modulos' style={{ 'padding': '56px 32px 8px', 'background': '#fff' }}>
           <div style={{ 'maxWidth': '1120px', 'margin': '0 auto', 'textAlign': 'center' }}>
             <div style={{ 'fontFamily': 'var(--font-ibm-plex-mono),monospace', 'fontSize': '11px', 'letterSpacing': '0.22em', 'color': '#98A1C0', 'textTransform': 'uppercase' }}>
-              Módulos integrados na mesma base
+              Todas as frentes de receita na mesma base
             </div>
             <div style={{ 'display': 'flex', 'flexWrap': 'wrap', 'justifyContent': 'center', 'gap': '14px', 'marginTop': '26px' }}>
               <span style={{ 'padding': '10px 20px', 'border': '1px solid #E6EAF6', 'borderRadius': '999px', 'fontSize': '14px', 'fontWeight': '600', 'color': '#3B4573' }}>
@@ -165,13 +165,13 @@ export default function LandingPage() {
                 Recursos
               </span>
               <h2 style={{ 'margin': '18px 0 12px', 'fontSize': '40px', 'lineHeight': '1.1', 'letterSpacing': '-0.03em', 'fontWeight': '800' }}>
-                Tudo que a gestão precisa{' '}
+                Seis frentes para arrecadar mais{' '}
                 <span style={{ 'color': '#2E3E9E' }}>
-                  para arrecadar melhor
+                  sem tocar na alíquota
                 </span>
               </h2>
               <p style={{ 'margin': '0', 'fontSize': '16px', 'color': '#4B5580', 'lineHeight': '1.6' }}>
-                Do dado bruto do sistema tributário ao relatório que vai para a mesa do prefeito.
+                Todas partem do mesmo ponto: o tributo já foi lançado. O que a plataforma mostra é quanto disso virou caixa e por onde o resto escapou.
               </p>
             </div>
             <div className='lp-grid-recursos' style={{ 'display': 'grid', 'gridTemplateColumns': 'repeat(3,1fr)', 'gap': '22px' }}>
@@ -180,10 +180,10 @@ export default function LandingPage() {
                   ▤
                 </div>
                 <h3 style={{ 'margin': '18px 0 8px', 'fontSize': '18px', 'fontWeight': '700' }}>
-                  Orçamento em tempo real
+                  Eficiência de arrecadação
                 </h3>
                 <p style={{ 'margin': '0', 'fontSize': '14.5px', 'lineHeight': '1.6', 'color': '#5A6488' }}>
-                  Previsto, atualizado e realizado por fonte de recurso, com comparativo automático do ano anterior.
+                  O percentual do lançado que virou caixa, tributo por tributo. A queda aparece durante o exercício, não no fechamento.
                 </p>
               </div>
               <div className='lp-hover-6' style={{ 'border': '1px solid #E9EDF8', 'borderRadius': '16px', 'padding': '28px', 'background': '#fff' }}>
@@ -191,10 +191,10 @@ export default function LandingPage() {
                   ◲
                 </div>
                 <h3 style={{ 'margin': '18px 0 8px', 'fontSize': '18px', 'fontWeight': '700' }}>
-                  Arrecadação por tributo
+                  Inadimplência que dá para cobrar
                 </h3>
                 <p style={{ 'margin': '0', 'fontSize': '14.5px', 'lineHeight': '1.6', 'color': '#5A6488' }}>
-                  IPTU, ISS, ITBI e taxas com série mensal, sazonalidade e desvio frente à meta.
+                  O saldo devedor separado pela data de vencimento: o que já venceu e pode ir para cobrança hoje, e o que ainda está no prazo.
                 </p>
               </div>
               <div className='lp-hover-6' style={{ 'border': '1px solid #E9EDF8', 'borderRadius': '16px', 'padding': '28px', 'background': '#fff' }}>
@@ -205,7 +205,7 @@ export default function LandingPage() {
                   Dívida ativa e recuperação
                 </h3>
                 <p style={{ 'margin': '0', 'fontSize': '14.5px', 'lineHeight': '1.6', 'color': '#5A6488' }}>
-                  Estoque, prescrição próxima e efetividade da cobrança por faixa de valor e por fiscal.
+                  Estoque por tributo, divisão entre administrativa e ajuizada, e o que está perto de prescrever enquanto ainda dá tempo de agir.
                 </p>
               </div>
               <div className='lp-hover-6' style={{ 'border': '1px solid #E9EDF8', 'borderRadius': '16px', 'padding': '28px', 'background': '#fff' }}>
@@ -213,10 +213,10 @@ export default function LandingPage() {
                   ◈
                 </div>
                 <h3 style={{ 'margin': '18px 0 8px', 'fontSize': '18px', 'fontWeight': '700' }}>
-                  Cadastro imobiliário
+                  Base fora do cadastro
                 </h3>
                 <p style={{ 'margin': '0', 'fontSize': '14.5px', 'lineHeight': '1.6', 'color': '#5A6488' }}>
-                  Cruzamento de cadastro, planta genérica e inadimplência para achar base tributável perdida.
+                  Cruzamento entre cadastro imobiliário, mobiliário e nota fiscal para achar imóvel e prestador que ainda não são base tributável.
                 </p>
               </div>
               <div className='lp-hover-6' style={{ 'border': '1px solid #E9EDF8', 'borderRadius': '16px', 'padding': '28px', 'background': '#fff' }}>
@@ -224,10 +224,10 @@ export default function LandingPage() {
                   ⚡
                 </div>
                 <h3 style={{ 'margin': '18px 0 8px', 'fontSize': '18px', 'fontWeight': '700' }}>
-                  Alertas e metas
+                  Análise escrita por IA
                 </h3>
                 <p style={{ 'margin': '0', 'fontSize': '14.5px', 'lineHeight': '1.6', 'color': '#5A6488' }}>
-                  Notificação automática quando a receita do mês cai fora da faixa esperada.
+                  A cada fechamento a IA lê os números do módulo e escreve o que mudou, quanto e contra qual período.
                 </p>
               </div>
               <div className='lp-hover-6' style={{ 'border': '1px solid #E9EDF8', 'borderRadius': '16px', 'padding': '28px', 'background': '#fff' }}>
@@ -238,7 +238,7 @@ export default function LandingPage() {
                   Reforma tributária
                 </h3>
                 <p style={{ 'margin': '0', 'fontSize': '14.5px', 'lineHeight': '1.6', 'color': '#5A6488' }}>
-                  Simulação da transição IBS/CBS sobre a receita própria do município, ano a ano.
+                  A eficiência do ISS entre 2024 e 2028 fixa a cota do município no IBS. Perder arrecadação agora custa receita até 2033.
                 </p>
               </div>
             </div>
@@ -257,7 +257,7 @@ export default function LandingPage() {
                 </span>
               </h2>
               <p style={{ 'margin': '0', 'fontSize': '16px', 'color': '#4B5580', 'lineHeight': '1.6' }}>
-                Cada módulo entrega os indicadores prontos, o comparativo do exercício anterior e a leitura escrita do número.
+                Cada módulo já vem com o indicador calculado, o comparativo do exercício anterior e a leitura escrita pela IA.
               </p>
             </div>
             <div style={{ 'display': 'flex', 'flexDirection': 'column', 'gap': '88px' }}>
@@ -277,14 +277,14 @@ export default function LandingPage() {
                     </span>
                   </h3>
                   <p style={{ 'margin': '0 0 22px', 'fontSize': '15.5px', 'lineHeight': '1.65', 'color': '#4B5580', 'maxWidth': '430px', 'textWrap': 'pretty' }}>
-                    Orçado, orçado atualizado e arrecadação do mês na mesma linha, com o comparativo automático do exercício anterior.
+                    Orçado, atualizado e arrecadado na mesma linha. O comparativo com o exercício anterior sai calculado, sem ninguém abrir planilha.
                   </p>
                   <div style={{ 'display': 'flex', 'flexDirection': 'column', 'gap': '12px', 'fontSize': '14.5px', 'fontWeight': '600', 'color': '#3B4573' }}>
                     <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
                       <span style={{ 'color': '#2E3E9E' }}>
                         ✓
                       </span>
-                      {' '}KPIs de receita e despesa
+                      {' '}Receita e despesa lado a lado
                     </span>
                     <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
                       <span style={{ 'color': '#2E3E9E' }}>
@@ -320,7 +320,7 @@ export default function LandingPage() {
                     </span>
                   </h3>
                   <p style={{ 'margin': '0 0 22px', 'fontSize': '15.5px', 'lineHeight': '1.65', 'color': '#4B5580', 'maxWidth': '430px', 'textWrap': 'pretty' }}>
-                    188 mil contribuintes segmentados por pessoa física e jurídica, situação cadastral e pendência por setor de cobrança.
+                    A base inteira separada por pessoa física e jurídica, situação cadastral e pendência por setor, para a cobrança começar por quem realmente deve.
                   </p>
                   <div style={{ 'display': 'flex', 'flexDirection': 'column', 'gap': '12px', 'fontSize': '14.5px', 'fontWeight': '600', 'color': '#3B4573' }}>
                     <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
@@ -369,7 +369,7 @@ export default function LandingPage() {
                     </span>
                   </h3>
                   <p style={{ 'margin': '0 0 22px', 'fontSize': '15.5px', 'lineHeight': '1.65', 'color': '#4B5580', 'maxWidth': '430px', 'textWrap': 'pretty' }}>
-                    Lançado, arrecadado, em aberto, isento e suspenso — com cinco anos de histórico e projeção do exercício seguinte.
+                    Lançado, arrecadado, em aberto, isento e suspenso, com cinco anos de histórico e projeção do exercício seguinte.
                   </p>
                   <div style={{ 'display': 'flex', 'flexDirection': 'column', 'gap': '12px', 'fontSize': '14.5px', 'fontWeight': '600', 'color': '#3B4573' }}>
                     <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
@@ -412,7 +412,7 @@ export default function LandingPage() {
                     </span>
                   </h3>
                   <p style={{ 'margin': '0 0 22px', 'fontSize': '15.5px', 'lineHeight': '1.65', 'color': '#4B5580', 'maxWidth': '430px', 'textWrap': 'pretty' }}>
-                    A eficiência de arrecadação de cada grupo — o percentual do lançado que virou receita, exercício por exercício.
+                    O percentual do lançado que virou receita, grupo por grupo. Quando a eficiência cai, aparece a tempo de corrigir dentro do exercício.
                   </p>
                   <div style={{ 'display': 'flex', 'flexDirection': 'column', 'gap': '12px', 'fontSize': '14.5px', 'fontWeight': '600', 'color': '#3B4573' }}>
                     <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
@@ -454,14 +454,14 @@ export default function LandingPage() {
                     Dívida ativa
                   </span>
                   <h3 style={{ 'margin': '18px 0 12px', 'fontSize': '32px', 'lineHeight': '1.12', 'letterSpacing': '-0.03em', 'fontWeight': '800' }}>
-                    R$ 151,9 mi inscritos
+                    Quanto está inscrito
                     <br />
                     <span style={{ 'color': '#2E3E9E' }}>
                       e quanto volta ao caixa
                     </span>
                   </h3>
                   <p style={{ 'margin': '0 0 22px', 'fontSize': '15.5px', 'lineHeight': '1.65', 'color': '#4B5580', 'maxWidth': '430px', 'textWrap': 'pretty' }}>
-                    Estoque por tributo, divisão entre administrativa e ajuizada e a taxa histórica de recuperação por exercício de origem.
+                    Estoque por tributo, divisão entre administrativa e ajuizada, e a taxa histórica de recuperação por exercício de origem.
                   </p>
                   <div style={{ 'display': 'flex', 'flexDirection': 'column', 'gap': '12px', 'fontSize': '14.5px', 'fontWeight': '600', 'color': '#3B4573' }}>
                     <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
@@ -480,7 +480,7 @@ export default function LandingPage() {
                       <span style={{ 'color': '#2E3E9E' }}>
                         ✓
                       </span>
-                      {' '}Taxa de recuperação: 53,1%
+                      {' '}Taxa de recuperação por exercício
                     </span>
                     <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
                       <span style={{ 'color': '#2E3E9E' }}>
@@ -504,7 +504,7 @@ export default function LandingPage() {
                     </span>
                   </h3>
                   <p style={{ 'margin': '0 0 22px', 'fontSize': '15.5px', 'lineHeight': '1.65', 'color': '#4B5580', 'maxWidth': '430px', 'textWrap': 'pretty' }}>
-                    A base exposta à transição, a curva de substituição do ISS até 2033 e as frentes que precisam de preparo antes de 2029.
+                    A base exposta à transição, a curva de substituição do ISS até 2033 e as frentes que precisam de preparo antes de 2029, quando a redução começa.
                   </p>
                   <div style={{ 'display': 'flex', 'flexDirection': 'column', 'gap': '12px', 'fontSize': '14.5px', 'fontWeight': '600', 'color': '#3B4573' }}>
                     <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
@@ -553,14 +553,14 @@ export default function LandingPage() {
                     </span>
                   </h3>
                   <p style={{ 'margin': '0 0 22px', 'fontSize': '15.5px', 'lineHeight': '1.65', 'color': '#4B5580', 'maxWidth': '430px', 'textWrap': 'pretty' }}>
-                    “Quais bairros têm mais IPTU em aberto?” — a resposta vem com o valor, a comparação e o painel de origem do dado.
+                    “Quais bairros têm mais IPTU em aberto?” A resposta vem com o valor, a comparação e o painel de onde o dado saiu.
                   </p>
                   <div style={{ 'display': 'flex', 'flexDirection': 'column', 'gap': '12px', 'fontSize': '14.5px', 'fontWeight': '600', 'color': '#3B4573' }}>
                     <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
                       <span style={{ 'color': '#2E3E9E' }}>
                         ✓
                       </span>
-                      {' '}Consultas em linguagem natural
+                      {' '}Pergunta em português, sem filtro nem menu
                     </span>
                     <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
                       <span style={{ 'color': '#2E3E9E' }}>
@@ -578,7 +578,7 @@ export default function LandingPage() {
                       <span style={{ 'color': '#2E3E9E' }}>
                         ✓
                       </span>
-                      {' '}Trilha de auditoria, sem dado pessoal exposto
+                      {' '}Trilha de auditoria, sem expor dado pessoal
                     </span>
                   </div>
                 </div>
@@ -613,7 +613,7 @@ export default function LandingPage() {
                   <strong style={{ 'color': '#fff' }}>
                     63,6%
                   </strong>
-                  {' '}da receita — dependência alta de repasses.
+                  {' '}da receita, o que deixa o caixa exposto a repasse que atrasa.
                 </li>
                 <li>
                   Julho caiu{' '}
@@ -632,39 +632,39 @@ export default function LandingPage() {
                 Inteligência
               </span>
               <h2 style={{ 'margin': '18px 0 14px', 'fontSize': '38px', 'lineHeight': '1.1', 'letterSpacing': '-0.03em', 'fontWeight': '800' }}>
-                O painel escreve
+                A IA lê o número
                 <br />
                 <span style={{ 'color': '#2E3E9E' }}>
-                  a leitura do número
+                  e escreve a conclusão
                 </span>
               </h2>
               <p style={{ 'margin': '0 0 26px', 'fontSize': '16px', 'lineHeight': '1.65', 'color': '#4B5580', 'maxWidth': '440px', 'textWrap': 'pretty' }}>
-                Além dos gráficos, a plataforma explica o que mudou, compara com o exercício anterior e aponta onde há risco de frustração de receita — em linguagem de gestão, não de banco de dados.
+                Todo mês a IA analisa os dados do município e escreve o que mudou, contra qual período e onde há risco de frustrar a receita. No chat, a mesma IA responde pergunta livre em português e cita o painel de origem de cada valor.
               </p>
               <div style={{ 'display': 'flex', 'flexDirection': 'column', 'gap': '14px', 'fontSize': '15px', 'fontWeight': '600', 'color': '#3B4573' }}>
                 <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
                   <span style={{ 'color': '#2E3E9E' }}>
                     ✓
                   </span>
-                  {' '}Comparativos automáticos ano a ano
+                  {' '}Análise escrita a cada fechamento
                 </span>
                 <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
                   <span style={{ 'color': '#2E3E9E' }}>
                     ✓
                   </span>
-                  {' '}Detecção de quedas e sazonalidade
+                  {' '}Queda e sazonalidade detectadas sozinhas
                 </span>
                 <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
                   <span style={{ 'color': '#2E3E9E' }}>
                     ✓
                   </span>
-                  {' '}Resumo executivo pronto para reunião
+                  {' '}Resumo pronto para a reunião de gabinete
                 </span>
                 <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
                   <span style={{ 'color': '#2E3E9E' }}>
                     ✓
                   </span>
-                  {' '}Exportação em PDF e planilha
+                  {' '}Toda resposta cita a fonte e o período
                 </span>
               </div>
             </div>
@@ -674,18 +674,18 @@ export default function LandingPage() {
           <div className='lp-grid-resultados' style={{ 'maxWidth': '1120px', 'margin': '0 auto', 'display': 'grid', 'gridTemplateColumns': 'repeat(4,1fr)', 'gap': '32px' }}>
             <div>
               <div style={{ 'fontSize': '38px', 'fontWeight': '800', 'letterSpacing': '-0.03em', 'color': '#1F2B6C' }}>
-                +11,1%
+                Mais caixa
               </div>
               <div style={{ 'marginTop': '6px', 'fontSize': '14px', 'color': '#5A6488', 'lineHeight': '1.5' }}>
-                de receita própria no primeiro ano de uso
+                da receita que já foi lançada e ainda não entrou
               </div>
             </div>
             <div>
               <div style={{ 'fontSize': '38px', 'fontWeight': '800', 'letterSpacing': '-0.03em', 'color': '#1F2B6C' }}>
-                R$ 674 mil
+                Menos perda
               </div>
               <div style={{ 'marginTop': '6px', 'fontSize': '14px', 'color': '#5A6488', 'lineHeight': '1.5' }}>
-                recuperados em dívida ativa no exercício
+                na dívida que caminha para a prescrição
               </div>
             </div>
             <div>
@@ -711,10 +711,10 @@ export default function LandingPage() {
             <div style={{ 'position': 'absolute', 'right': '-70px', 'top': '-80px', 'width': '280px', 'height': '280px', 'borderRadius': '999px', 'background': 'rgba(255,255,255,0.07)' }} />
             <div style={{ 'position': 'relative', 'maxWidth': '560px' }}>
               <h2 style={{ 'margin': '0 0 16px', 'fontSize': '38px', 'lineHeight': '1.12', 'letterSpacing': '-0.03em', 'fontWeight': '800' }}>
-                Veja o painel com os dados da sua prefeitura
+                Veja quanto da sua receita está parada
               </h2>
               <p style={{ 'margin': '0 0 32px', 'fontSize': '16.5px', 'lineHeight': '1.6', 'color': '#DCE2FA' }}>
-                Uma demonstração de 30 minutos com o time técnico: conectamos uma amostra da sua base e mostramos os indicadores já prontos.
+                Uma demonstração de 30 minutos com o time técnico. Conectamos uma amostra da sua base e mostramos, com os seus números, onde há receita a recuperar.
               </p>
               <div style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '20px', 'flexWrap': 'wrap' }}>
                 <a className='lp-hover-7' href='#acesso' style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '12px', 'background': '#fff', 'color': '#1F2B6C', 'padding': '17px 28px', 'borderRadius': '999px', 'fontSize': '15px', 'fontWeight': '700' }}>
