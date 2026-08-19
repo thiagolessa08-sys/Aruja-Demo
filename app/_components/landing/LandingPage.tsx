@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { IconeMarca } from '../MarcaPrefeitura'
 import AppMockup from './AppMockup'
 import ScaledFrame from './ScaledFrame'
+import SetaDireita from './SetaDireita'
 
 import './landing.css'
 
@@ -47,9 +48,7 @@ export default function LandingPage() {
               </Link>
               <a className='lp-hover-5' href='#demo' style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px', 'background': '#2E3E9E', 'color': '#fff', 'padding': '12px 20px', 'borderRadius': '999px', 'fontSize': '14px', 'fontWeight': '700', 'whiteSpace': 'nowrap', 'boxShadow': '0 10px 24px -10px rgba(46,62,158,0.7)' }}>
                 Agendar demonstração{' '}
-                <span style={{ 'fontSize': '15px' }}>
-                  →
-                </span>
+                <SetaDireita tamanho={16} espessura={2.6} />
               </a>
             </div>
           </div>
@@ -65,8 +64,8 @@ export default function LandingPage() {
                 <span style={{ 'fontSize': '13px', 'fontWeight': '600', 'color': '#3B4573' }}>
                   Insights com IA na arrecadação
                 </span>
-                <span style={{ 'color': '#8791B4' }}>
-                  →
+                <span style={{ 'color': '#8791B4', 'display': 'flex' }}>
+                  <SetaDireita tamanho={14} espessura={2.4} />
                 </span>
               </div>
               <h1 style={{ 'margin': '24px 0 0', 'fontSize': 'clamp(38px, 4.4vw, 56px)', 'lineHeight': '1.04', 'letterSpacing': '-0.035em', 'fontWeight': '800' }}>
@@ -85,7 +84,7 @@ export default function LandingPage() {
                 <a className='lp-hover-5' href='#demo' style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '12px', 'whiteSpace': 'nowrap', 'flex': 'none', 'background': '#2E3E9E', 'color': '#fff', 'padding': '17px 28px', 'borderRadius': '999px', 'fontSize': '15px', 'fontWeight': '700', 'boxShadow': '0 18px 34px -16px rgba(46,62,158,0.8)' }}>
                   Solicitar demonstração{' '}
                   <span style={{ 'display': 'flex', 'alignItems': 'center', 'justifyContent': 'center', 'width': '24px', 'height': '24px', 'borderRadius': '999px', 'background': 'rgba(255,255,255,0.18)' }}>
-                    →
+                    <SetaDireita tamanho={14} espessura={2.8} />
                   </span>
                 </a>
                 <a href='#tour' style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px', 'whiteSpace': 'nowrap', 'flex': 'none', 'fontSize': '15px', 'fontWeight': '700', 'color': '#1F2B6C' }}>
@@ -720,9 +719,7 @@ export default function LandingPage() {
               <div style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '20px', 'flexWrap': 'wrap' }}>
                 <a className='lp-hover-7' href='#acesso' style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '12px', 'background': '#fff', 'color': '#1F2B6C', 'padding': '17px 28px', 'borderRadius': '999px', 'fontSize': '15px', 'fontWeight': '700' }}>
                   Agendar demonstração{' '}
-                  <span>
-                    →
-                  </span>
+                  <SetaDireita tamanho={16} espessura={2.6} />
                 </a>
                 <a href='#acesso' style={{ 'color': '#DCE2FA', 'fontSize': '14.5px', 'fontWeight': '600' }}>
                   ou falar com um especialista
