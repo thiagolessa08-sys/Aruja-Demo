@@ -546,10 +546,10 @@ export default function LandingPage() {
                     Chat analítico · novo
                   </span>
                   <h3 style={{ 'margin': '18px 0 12px', 'fontSize': '32px', 'lineHeight': '1.12', 'letterSpacing': '-0.03em', 'fontWeight': '800' }}>
-                    Pergunte em português,
+                    Pergunte aos seus dados
                     <br />
                     <span style={{ 'color': '#2E3E9E' }}>
-                      receba o número com a fonte
+                      e receba o número com a fonte
                     </span>
                   </h3>
                   <p style={{ 'margin': '0 0 22px', 'fontSize': '15.5px', 'lineHeight': '1.65', 'color': '#4B5580', 'maxWidth': '430px', 'textWrap': 'pretty' }}>
@@ -632,39 +632,39 @@ export default function LandingPage() {
                 Inteligência
               </span>
               <h2 style={{ 'margin': '18px 0 14px', 'fontSize': '38px', 'lineHeight': '1.1', 'letterSpacing': '-0.03em', 'fontWeight': '800' }}>
-                Pergunte aos seus dados
+                Insights escritos pela IA
                 <br />
                 <span style={{ 'color': '#2E3E9E' }}>
-                  e receba a análise pronta
+                  a cada fechamento
                 </span>
               </h2>
               <p style={{ 'margin': '0 0 26px', 'fontSize': '16px', 'lineHeight': '1.65', 'color': '#4B5580', 'maxWidth': '440px', 'textWrap': 'pretty' }}>
-                Você pergunta em português e a resposta vem com o valor, a comparação e a origem do dado. E a IA não espera a pergunta: a cada fechamento ela lê os números sozinha e aponta o que mudou e onde a receita corre risco.
+                Ninguém precisa pedir. A cada fechamento a IA lê os números do município e escreve o insight: o que mudou, contra qual período e onde a receita corre risco. O gestor abre o painel e a leitura já está lá.
               </p>
               <div style={{ 'display': 'flex', 'flexDirection': 'column', 'gap': '14px', 'fontSize': '15px', 'fontWeight': '600', 'color': '#3B4573' }}>
                 <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
                   <span style={{ 'color': '#2E3E9E' }}>
                     ✓
                   </span>
-                  {' '}Pergunta livre, sem filtro nem menu
+                  {' '}Insight escrito a cada fechamento
                 </span>
                 <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
                   <span style={{ 'color': '#2E3E9E' }}>
                     ✓
                   </span>
-                  {' '}Resposta com valor, comparação e fonte
+                  {' '}Comparação automática com o exercício anterior
                 </span>
                 <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
                   <span style={{ 'color': '#2E3E9E' }}>
                     ✓
                   </span>
-                  {' '}Análise escrita a cada fechamento
+                  {' '}Aponta queda e sazonalidade atípica
                 </span>
                 <span style={{ 'display': 'flex', 'alignItems': 'center', 'gap': '10px' }}>
                   <span style={{ 'color': '#2E3E9E' }}>
                     ✓
                   </span>
-                  {' '}Alerta de queda antes de o exercício fechar
+                  {' '}Resumo pronto para a reunião de gabinete
                 </span>
               </div>
             </div>
